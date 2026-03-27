@@ -1,0 +1,27 @@
+# RetailMind AI Agent — Dependencies
+# Install: pip install -r requirements.txt
+
+# LangChain core
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-openai>=0.2.0
+
+# OpenAI SDK
+openai>=1.0.0
+
+# Streamlit
+streamlit>=1.40.0
+
+# Data
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualisation (Plotly only — never matplotlib in Streamlit)
+plotly>=5.18.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# Fuzzy search for product catalog
+rapidfuzz>=3.0.0
