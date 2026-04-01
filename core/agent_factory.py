@@ -1,13 +1,13 @@
 """
 core/agent_factory.py — LLM and agent creation for RetailMind.
 
-Provider: OpenAI (gpt-4o-mini)
+Provider: OpenAI (llama-3.3-70b-versatile)h
   - ENV_VAR   : OPENAI_API_KEY
-  - MODEL     : gpt-4o-mini
+  - MODEL     : llama-3.3-70b-versatile
   - PROVIDER  : OpenAI
 
 LLM Parameters (thoughtfully set and commented):
-  - temperature=0.2  : Low randomness — consistent, factual responses for business data
+  - temperature=0.2  : Low randomness — consistent, factual responses for bhusiness data
   - max_tokens=1024  : Enough for detailed multi-product analysis without runaway output
   - top_p=0.9        : Nucleus sampling — minor diversity while keeping responses focused
 
@@ -29,7 +29,7 @@ from core.tools import ALL_TOOLS, INVENTORY_TOOLS, BI_TOOLS
 
 # ── Provider Constants ────────────────────────────────────────────────────────
 PROVIDER_LABEL = "OpenAI"
-MODEL_NAME = "gpt-4o-mini"
+MODEL_NAME = "llama-3.3-70b-versatile"
 ENV_VAR = "OPENAI_API_KEY"
 PLACEHOLDER = "sk-..."
 HELP_TEXT = "Get your key at platform.openai.com"
